@@ -39,27 +39,25 @@
                 <p>Creative and self-starting Front-end Sofware Developer with over a year experience building stable eCommerce websites in fast-paced, collaborative environments. Highly skilled in HTML/CSS/JavaScript/ReactJS and working knowledge of photoshop. </p>
 
                 <div class="tab-titles">
-<p class="tab-links active-link">Skills</p>
-<p class="tab-links">Experience</p>
-<p class="tab-links">Education</p>
-
-
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links"onclick="opentab('experience')">Experience</p>
+<p class="tab-links"onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-content">
+                <div class="tab-content active tab" id="skills">
                     <ul>
                         <li><span>Frontend</span><br>Software Developer</li>
                         <li><span>Web Development</span><br>Web app Development</li>
                         <li><span>Graphics Designer</span><br>Graphics Designer</li>
                     </ul>      
                 </div>
-                <div class="tab-content">
+                <div class="tab-content" id="experience">
                     <ul>
                         <li><span>2021-Current</span><br>Frontend Development Training at edX</li>
                         <li><span>2019-2020</span><br>Graphics Designer at Gimafort</li>
                         <li><span>2017-2018</span><br>Graphics Designer at Tiana's Venture</li>
                         </ul>
             </div>
-            <div class="tab-content">
+            <div class="tab-content" id="education">
                 <ul>
                     <li><span>2021</span><br>Frontend DevelopmentTraining at edX</li>
                     <li><span>2019</span><br>Graphics Designer at Gimafort</li>
@@ -69,5 +67,8 @@
         </div>
     </div>
    </div>
-</body>
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontent = document.getElementsByClassName("tab-contents")
+   </script>
 </html>
